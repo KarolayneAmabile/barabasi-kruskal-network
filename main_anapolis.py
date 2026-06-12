@@ -17,8 +17,40 @@ def main():
     nx.write_graphml(G, f"{pasta_saida}/grafo.graphml")
 
     adj, custo = extrair_matrizes(G)
+    # Após extrair_matrizes(G)
     adj.to_csv(f"{pasta_saida}/matriz_adjacencia.csv")
     custo.to_csv(f"{pasta_saida}/matriz_custo.csv")
+
+    abrev = {
+        "Doce Paladar":                              "DP",
+        "Favoritta Panificadora":                    "FP",
+        "Graci Falcão Doceria":                      "GF",
+        "Perdomo Doces - Supermercado Rio Vermelho": "PD",
+        "Cafeteria Com Café":                        "CC",
+        "Jardim Secreto Cafe":                       "JS",
+        "Eldorado Sabores":                          "ES",
+        "Doçuras da Thalita":                        "DT",
+        "Bistrô do Papito":                          "BP",
+        "Bendito Espresso":                          "BE",
+        "Café S/A Anápolis":                         "CA",
+        "Kikas Cake Confeitaria":                    "KC",
+        "Nubia Camilo Boulangerie":                  "NC",
+        "Doce Delícia":                              "DD",
+        "Rosa Café":                                 "RC",
+    }
+
+    adj_print  = adj.rename(index=abrev,  columns=abrev)
+    custo_print = custo.rename(index=abrev, columns=abrev)
+
+    print("\nLegenda:")
+    for sigla, nome in sorted(abrev.items(), key=lambda x: x[1]):
+        print(f"  {abrev[sigla]} = {sigla}")
+
+    print("\nMatriz de Adjacência - Anápolis:")
+    print(adj_print.to_string())
+
+    print("\nMatriz de Custo - Anápolis (metros):")
+    print(custo_print.to_string())
 
     mst, custo_total = kruskal_mst(G)
 
@@ -28,9 +60,7 @@ def main():
     print(f"Custo total: {custo_total}")
 
     exportar_arestas_mst(mst, f"{pasta_saida}/arestas_mst.csv")
-
     plotar_grafo_e_mst(G, mst, "anapolis", pasta_saida)
-
     plotar_mst_no_mapa(road, mst, f"{pasta_saida}/mst_mapa_real.png")
 
 

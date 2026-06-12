@@ -29,6 +29,8 @@ def main():
         print(f"Matrizes (Adjacência e Custo) exportadas para '{pasta_saida}/'.")
         
         if n == 10:
+            print("\nMatriz de Adjacência gerada para n=10 (Exibição no terminal):")
+            print(df_adj)
             print("\nMatriz de Custo gerada para n=10 (Exibição no terminal):")
             print(df_cost)
         

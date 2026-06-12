@@ -107,6 +107,7 @@ def extrair_matrizes(G):
     matriz_adj = nx.to_pandas_adjacency(
         G,
         nodelist=nos,
+        weight=None,
         dtype=int
     )
 

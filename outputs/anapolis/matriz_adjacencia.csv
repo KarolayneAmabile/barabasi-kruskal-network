@@ -1,16 +1,16 @@
 ,Doce Paladar,Favoritta Panificadora,Graci Falcão Doceria,Perdomo Doces - Supermercado Rio Vermelho,Cafeteria Com Café,Jardim Secreto Cafe,Eldorado Sabores,Doçuras da Thalita,Bistrô do Papito,Bendito Espresso,Café S/A Anápolis,Kikas Cake Confeitaria,Nubia Camilo Boulangerie,Doce Delícia,Rosa Café
-Doce Paladar,0,6213,3045,2819,3389,3768,4153,3304,1893,3195,2771,4107,3621,2685,4133
-Favoritta Panificadora,6213,0,3428,4346,8341,3799,4137,8924,7335,4201,4428,9727,4029,4514,3173
-Graci Falcão Doceria,3045,3428,0,1222,5229,2254,3219,5812,4224,1692,1305,6615,2009,1391,1562
-Perdomo Doces - Supermercado Rio Vermelho,2819,4346,1222,0,5250,1387,2132,5503,3915,814,391,6306,1240,305,1594
-Cafeteria Com Café,3389,8341,5229,5250,0,5989,6579,1594,1467,5417,4993,2398,5842,4907,6328
-Jardim Secreto Cafe,3768,3799,2254,1387,5989,0,1530,6682,5094,566,1044,7486,229,1130,998
-Eldorado Sabores,4153,4137,3219,2132,6579,1530,0,7581,5992,2028,2350,8384,2078,2264,2578
-Doçuras da Thalita,3304,8924,5812,5503,1594,6682,7581,0,1371,5796,5372,1045,6221,5286,6707
-Bistrô do Papito,1893,7335,4224,3915,1467,5094,5992,1371,0,4451,4027,2391,4876,3941,5361
-Bendito Espresso,3195,4201,1692,814,5417,566,2028,5796,4451,0,478,6919,425,564,1027
-Café S/A Anápolis,2771,4428,1305,391,4993,1044,2350,5372,4027,478,0,6517,903,86,1505
-Kikas Cake Confeitaria,4107,9727,6615,6306,2398,7486,8384,1045,2391,6919,6517,0,7232,6297,7717
-Nubia Camilo Boulangerie,3621,4029,2009,1240,5842,229,2078,6221,4876,425,903,7232,0,994,768
-Doce Delícia,2685,4514,1391,305,4907,1130,2264,5286,3941,564,86,6297,994,0,1591
-Rosa Café,4133,3173,1562,1594,6328,998,2578,6707,5361,1027,1505,7717,768,1591,0
+Doce Paladar,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Favoritta Panificadora,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1
+Graci Falcão Doceria,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Perdomo Doces - Supermercado Rio Vermelho,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+Cafeteria Com Café,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1
+Jardim Secreto Cafe,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+Eldorado Sabores,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1
+Doçuras da Thalita,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1
+Bistrô do Papito,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1
+Bendito Espresso,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Café S/A Anápolis,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1
+Kikas Cake Confeitaria,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1
+Nubia Camilo Boulangerie,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1
+Doce Delícia,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1
+Rosa Café,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
