@@ -1,67 +1,163 @@
 import matplotlib.pyplot as plt
 import networkx as nx
 
+
 def plotar_grafo_e_mst(G, mst, n, pasta_saida="outputs"):
     """
-    Gera as interfaces mostrando a representação geométrica do grafo
-    e da árvore geradora mínima, com o grau de cada nó dentro do círculo.
+    Desenha lado a lado:
+
+    - Grafo original
+    - Árvore Geradora Mínima (Kruskal)
+
+    Para grafos geográficos (latitude/longitude):
+        - utiliza as coordenadas reais;
+        - mostra o nome dos estabelecimentos.
+
+    Para grafos Barabási-Albert:
+        - utiliza spring_layout;
+        - mostra o grau dos nós.
     """
-    fig, axes = plt.subplots(1, 2, figsize=(14, 6))
-    
-    # Se o grafo possuir coordenadas geográficas, utiliza-as.
-    # Caso contrário, utiliza spring_layout.
-    if all(
-        "latitude" in G.nodes[n] and "longitude" in G.nodes[n]
-        for n in G.nodes
-    ):
+
+    fig, axes = plt.subplots(1, 2, figsize=(18, 9))
+
+    possui_coordenadas = all(
+        "latitude" in G.nodes[node]
+        and "longitude" in G.nodes[node]
+        for node in G.nodes
+    )
+
+    # --------------------------------------------------
+    # Layout
+    # --------------------------------------------------
+
+    if possui_coordenadas:
 
         pos = {
-            n: (
-                G.nodes[n]["longitude"],
-                G.nodes[n]["latitude"],
+            node: (
+                G.nodes[node]["longitude"],
+                G.nodes[node]["latitude"],
             )
-            for n in G.nodes
+            for node in G.nodes
         }
+
+        titulo = "Locais de Anápolis"
 
     else:
 
         pos = nx.spring_layout(G, seed=42)
-    
-    # --- 7.1 Grafo Original ---
-    axes[0].set_title(f"Grafo Original (Barabási-Albert n={n})\nOs números nos nós indicam o GRAU", fontsize=12)
-    
-    # Desenha as arestas
-    nx.draw_networkx_edges(G, pos, ax=axes[0], edge_color='gray', alpha=0.4)
-    # Desenha os nós (tamanho ligeiramente maior para caber o número)
-    nx.draw_networkx_nodes(G, pos, ax=axes[0], node_size=250, node_color='lightblue')
-    
-    # Calcula e desenha os graus do Grafo Original dentro dos nós
-    graus_orig = dict(G.degree())
-    labels_orig = {no: str(grau) for no, grau in graus_orig.items()}
-    nx.draw_networkx_labels(G, pos, labels=labels_orig, ax=axes[0], font_size=8, font_weight='bold')
-    
-    axes[0].axis('off')
-    
-    # --- 7.2 Árvore Geradora Mínima ---
-    axes[1].set_title("Árvore Geradora Mínima (Kruskal)\nOs números nos nós indicam o GRAU NA ÁRVORE", fontsize=12)
-    
-    # Desenha as arestas da árvore
-    nx.draw_networkx_edges(mst, pos, ax=axes[1], edge_color='red', width=2)
-    # Desenha os nós
-    nx.draw_networkx_nodes(mst, pos, ax=axes[1], node_size=250, node_color='lightgreen')
-    
-    # Calcula e desenha os graus da Árvore dentro dos nós
-    # (Note que o grau na árvore é diferente do grau no grafo original)
-    graus_mst = dict(mst.degree())
-    labels_mst = {no: str(grau) for no, grau in graus_mst.items()}
-    nx.draw_networkx_labels(mst, pos, labels=labels_mst, ax=axes[1], font_size=8, font_weight='bold')
-    
-    axes[1].axis('off')
-    
+
+        titulo = f"Barabási-Albert (n={n})"
+
+    # ==================================================
+    # GRAFO ORIGINAL
+    # ==================================================
+
+    axes[0].set_title(
+        f"Grafo Original ({titulo})",
+        fontsize=12,
+    )
+
+    nx.draw_networkx_edges(
+        G,
+        pos,
+        ax=axes[0],
+        edge_color="gray",
+        alpha=0.4,
+    )
+
+    nx.draw_networkx_nodes(
+        G,
+        pos,
+        ax=axes[0],
+        node_size=350,
+        node_color="lightblue",
+    )
+
+    if possui_coordenadas:
+
+        labels = {
+            node: node
+            for node in G.nodes()
+        }
+
+    else:
+
+        labels = {
+            node: str(grau)
+            for node, grau in G.degree()
+        }
+
+    nx.draw_networkx_labels(
+        G,
+        pos,
+        labels=labels,
+        ax=axes[0],
+        font_size=7,
+    )
+
+    axes[0].axis("off")
+
+    # ==================================================
+    # MST
+    # ==================================================
+
+    axes[1].set_title(
+        "Árvore Geradora Mínima (Kruskal)",
+        fontsize=12,
+    )
+
+    nx.draw_networkx_edges(
+        mst,
+        pos,
+        ax=axes[1],
+        edge_color="red",
+        width=2,
+    )
+
+    nx.draw_networkx_nodes(
+        mst,
+        pos,
+        ax=axes[1],
+        node_size=350,
+        node_color="lightgreen",
+    )
+
+    if possui_coordenadas:
+
+        labels = {
+            node: node
+            for node in mst.nodes()
+        }
+
+    else:
+
+        labels = {
+            node: str(grau)
+            for node, grau in mst.degree()
+        }
+
+    nx.draw_networkx_labels(
+        mst,
+        pos,
+        labels=labels,
+        ax=axes[1],
+        font_size=7,
+    )
+
+    axes[1].axis("off")
+
     plt.tight_layout()
-    caminho_arquivo = f"{pasta_saida}/interface_grafos_n{n}.png"
-    plt.savefig(caminho_arquivo, dpi=150)
-    print(f"Interface gráfica salva em: {caminho_arquivo}")
-    
-    # Exibe a interface
+
+    caminho = f"{pasta_saida}/interface_grafos_n{n}.png"
+
+    plt.savefig(
+        caminho,
+        dpi=200,
+        bbox_inches="tight",
+    )
+
+    print(f"Interface salva em: {caminho}")
+
     plt.show()
+
+    plt.close(fig)

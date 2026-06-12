@@ -48,10 +48,17 @@ def construir_grafo(csv_path: str):
 
     for _, row in locais.iterrows():
 
+        x, y = transformer.transform(
+            row["longitude"],
+            row["latitude"],
+        )
+
         G.add_node(
             row["nome"],
             latitude=row["latitude"],
-            longitude=row["longitude"]
+            longitude=row["longitude"],
+            x=x,
+            y=y,
         )
 
     for i, j in combinations(range(len(locais)), 2):
@@ -101,7 +108,7 @@ def construir_grafo(csv_path: str):
             weight=distancia
         )
 
-    return G
+    return G, road
 
 def extrair_matrizes(G):
 

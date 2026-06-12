@@ -1,5 +1,8 @@
 import os
 import networkx as nx
+from utils.mapa import plotar_mst_no_mapa
+
+from utils.exportador import exportar_arestas_mst
 
 from models.gerador_grafo_anapolis import (
     construir_grafo,
@@ -19,7 +22,7 @@ def main():
         exist_ok=True
     )
 
-    G = construir_grafo(
+    G, road = construir_grafo(
         "data/locais_anapolis.csv"
     )
 
@@ -46,9 +49,52 @@ def main():
     mst, custo_total = kruskal_mst(G)
 
     print()
+
+    print("Resultado do Kruskal")
+
+    print("--------------------")
+
+    print(f"Custo total: {custo_total}")
+
+    exportar_arestas_mst(
+
+        mst,
+
+        f"{pasta_saida}/arestas_mst.csv",
+
+    )
+
+    plotar_grafo_e_mst(
+
+        G,
+
+        mst,
+
+        "anapolis",
+
+        pasta_saida,
+
+    )
+
+    plotar_mst_no_mapa(
+
+        road,
+
+        mst,
+
+        f"{pasta_saida}/mst_mapa_real.png",
+
+    )
+
+    print()
     print("Resultado do Kruskal")
     print("--------------------")
     print(f"Custo total: {custo_total}")
+
+    exportar_arestas_mst(
+        mst,
+        f"{pasta_saida}/arestas_mst.csv",
+    )
 
     plotar_grafo_e_mst(
         G,

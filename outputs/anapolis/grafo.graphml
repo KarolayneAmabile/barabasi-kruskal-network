@@ -1,383 +1,415 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key id="d2" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d4" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d3" for="node" attr.name="y" attr.type="double" />
+  <key id="d2" for="node" attr.name="x" attr.type="double" />
   <key id="d1" for="node" attr.name="longitude" attr.type="double" />
   <key id="d0" for="node" attr.name="latitude" attr.type="double" />
   <graph edgedefault="undirected">
     <node id="Doce Paladar">
       <data key="d0">-16.31493621476556</data>
       <data key="d1">-48.96021224051252</data>
+      <data key="d2">717934.0043185707</data>
+      <data key="d3">8195137.520113165</data>
     </node>
     <node id="Favoritta Panificadora">
       <data key="d0">-16.33504452264882</data>
       <data key="d1">-48.91849044703452</data>
+      <data key="d2">722370.5333650743</data>
+      <data key="d3">8192866.8659848245</data>
     </node>
     <node id="Graci Falcão Doceria">
       <data key="d0">-16.32479520684391</data>
       <data key="d1">-48.94039320470611</data>
+      <data key="d2">720041.2429647378</data>
+      <data key="d3">8194025.046297357</data>
     </node>
     <node id="Perdomo Doces - Supermercado Rio Vermelho">
       <data key="d0">-16.32888860316995</data>
       <data key="d1">-48.9467872047059</data>
+      <data key="d2">719353.3159045858</data>
+      <data key="d3">8193578.894197145</data>
     </node>
     <node id="Cafeteria Com Café">
       <data key="d0">-16.294842597231508</data>
       <data key="d1">-48.95890093354264</data>
+      <data key="d2">718096.4082247858</data>
+      <data key="d3">8197360.021421298</data>
     </node>
     <node id="Jardim Secreto Cafe">
       <data key="d0">-16.336930293072935</data>
       <data key="d1">-48.9428507047057</data>
+      <data key="d2">719765.0311996251</data>
+      <data key="d3">8192684.608804765</data>
     </node>
     <node id="Eldorado Sabores">
       <data key="d0">-16.345905279542833</data>
       <data key="d1">-48.946755604705466</data>
+      <data key="d2">719337.6996829081</data>
+      <data key="d3">8191695.486028271</data>
     </node>
     <node id="Doçuras da Thalita">
       <data key="d0">-16.291302876452924</data>
       <data key="d1">-48.96846434703583</data>
+      <data key="d2">717078.0687090001</data>
+      <data key="d3">8197761.983296381</data>
     </node>
     <node id="Bistrô do Papito">
       <data key="d0">-16.302048094463412</data>
       <data key="d1">-48.96311863354229</data>
+      <data key="d2">717637.6156742324</data>
+      <data key="d3">8196567.0433461405</data>
     </node>
     <node id="Bendito Espresso">
       <data key="d0">-16.33487039285767</data>
       <data key="d1">-48.94531800470579</data>
+      <data key="d2">719503.6545700984</data>
+      <data key="d3">8192915.257393921</data>
     </node>
     <node id="Café S/A Anápolis">
       <data key="d0">-16.33072910449988</data>
       <data key="d1">-48.947001720048576</data>
+      <data key="d2">719328.3368906948</data>
+      <data key="d3">8193375.422152887</data>
     </node>
     <node id="Kikas Cake Confeitaria">
       <data key="d0">-16.28466338281647</data>
       <data key="d1">-48.97249106237848</data>
+      <data key="d2">716654.940945012</data>
+      <data key="d3">8198501.095910991</data>
     </node>
     <node id="Nubia Camilo Boulangerie">
       <data key="d0">-16.335053601381652</data>
       <data key="d1">-48.94210400470578</data>
+      <data key="d2">719846.929425767</data>
+      <data key="d3">8192891.511632999</data>
     </node>
     <node id="Doce Delícia">
       <data key="d0">-16.330460396500722</data>
       <data key="d1">-48.94734791635093</data>
+      <data key="d2">719291.6379361466</data>
+      <data key="d3">8193405.535127971</data>
     </node>
     <node id="Rosa Café">
       <data key="d0">-16.333211082179595</data>
       <data key="d1">-48.93725923539101</data>
+      <data key="d2">720366.7556288898</data>
+      <data key="d3">8193090.2004361935</data>
     </node>
     <edge source="Doce Paladar" target="Favoritta Panificadora">
-      <data key="d2">6213.751907803192</data>
+      <data key="d4">6213.751907803192</data>
     </edge>
     <edge source="Doce Paladar" target="Graci Falcão Doceria">
-      <data key="d2">3045.3378569900788</data>
+      <data key="d4">3045.3378569900788</data>
     </edge>
     <edge source="Doce Paladar" target="Perdomo Doces - Supermercado Rio Vermelho">
-      <data key="d2">2819.5408719909287</data>
+      <data key="d4">2819.5408719909287</data>
     </edge>
     <edge source="Doce Paladar" target="Cafeteria Com Café">
-      <data key="d2">3389.6898991444928</data>
+      <data key="d4">3389.6898991444928</data>
     </edge>
     <edge source="Doce Paladar" target="Jardim Secreto Cafe">
-      <data key="d2">3768.175400619635</data>
+      <data key="d4">3768.175400619635</data>
     </edge>
     <edge source="Doce Paladar" target="Eldorado Sabores">
-      <data key="d2">4153.383416494391</data>
+      <data key="d4">4153.383416494391</data>
     </edge>
     <edge source="Doce Paladar" target="Doçuras da Thalita">
-      <data key="d2">3304.2749968074745</data>
+      <data key="d4">3304.2749968074745</data>
     </edge>
     <edge source="Doce Paladar" target="Bistrô do Papito">
-      <data key="d2">1893.0866321306778</data>
+      <data key="d4">1893.0866321306778</data>
     </edge>
     <edge source="Doce Paladar" target="Bendito Espresso">
-      <data key="d2">3195.6686656452152</data>
+      <data key="d4">3195.6686656452152</data>
     </edge>
     <edge source="Doce Paladar" target="Café S/A Anápolis">
-      <data key="d2">2771.89760932868</data>
+      <data key="d4">2771.89760932868</data>
     </edge>
     <edge source="Doce Paladar" target="Kikas Cake Confeitaria">
-      <data key="d2">4107.800250091634</data>
+      <data key="d4">4107.800250091634</data>
     </edge>
     <edge source="Doce Paladar" target="Nubia Camilo Boulangerie">
-      <data key="d2">3621.125340036154</data>
+      <data key="d4">3621.125340036154</data>
     </edge>
     <edge source="Doce Paladar" target="Doce Delícia">
-      <data key="d2">2685.8741051554466</data>
+      <data key="d4">2685.8741051554466</data>
     </edge>
     <edge source="Doce Paladar" target="Rosa Café">
-      <data key="d2">4133.907429311001</data>
+      <data key="d4">4133.907429311001</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Graci Falcão Doceria">
-      <data key="d2">3428.7966674977997</data>
+      <data key="d4">3428.7966674977997</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Perdomo Doces - Supermercado Rio Vermelho">
-      <data key="d2">4346.044741379746</data>
+      <data key="d4">4346.044741379746</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Cafeteria Com Café">
-      <data key="d2">8341.30011515448</data>
+      <data key="d4">8341.30011515448</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Jardim Secreto Cafe">
-      <data key="d2">3799.9989454417437</data>
+      <data key="d4">3799.9989454417437</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Eldorado Sabores">
-      <data key="d2">4137.820965720601</data>
+      <data key="d4">4137.820965720601</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Doçuras da Thalita">
-      <data key="d2">8924.04574533986</data>
+      <data key="d4">8924.04574533986</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Bistrô do Papito">
-      <data key="d2">7335.812451106934</data>
+      <data key="d4">7335.812451106934</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Bendito Espresso">
-      <data key="d2">4201.95327914587</data>
+      <data key="d4">4201.95327914587</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Café S/A Anápolis">
-      <data key="d2">4428.799161450034</data>
+      <data key="d4">4428.799161450034</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Kikas Cake Confeitaria">
-      <data key="d2">9727.570998624018</data>
+      <data key="d4">9727.570998624018</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Nubia Camilo Boulangerie">
-      <data key="d2">4029.8654886094687</data>
+      <data key="d4">4029.8654886094687</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Doce Delícia">
-      <data key="d2">4514.822665623267</data>
+      <data key="d4">4514.822665623267</data>
     </edge>
     <edge source="Favoritta Panificadora" target="Rosa Café">
-      <data key="d2">3173.240960752524</data>
+      <data key="d4">3173.240960752524</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Perdomo Doces - Supermercado Rio Vermelho">
-      <data key="d2">1222.9885413091145</data>
+      <data key="d4">1222.9885413091145</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Cafeteria Com Café">
-      <data key="d2">5229.646780433163</data>
+      <data key="d4">5229.646780433163</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Jardim Secreto Cafe">
-      <data key="d2">2254.558232388725</data>
+      <data key="d4">2254.558232388725</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Eldorado Sabores">
-      <data key="d2">3219.1997843569443</data>
+      <data key="d4">3219.1997843569443</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Doçuras da Thalita">
-      <data key="d2">5812.392410618538</data>
+      <data key="d4">5812.392410618538</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Bistrô do Papito">
-      <data key="d2">4224.159116385611</data>
+      <data key="d4">4224.159116385611</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Bendito Espresso">
-      <data key="d2">1692.0754165766996</data>
+      <data key="d4">1692.0754165766996</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Café S/A Anápolis">
-      <data key="d2">1305.7429613794027</data>
+      <data key="d4">1305.7429613794027</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Kikas Cake Confeitaria">
-      <data key="d2">6615.9176639026955</data>
+      <data key="d4">6615.9176639026955</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Nubia Camilo Boulangerie">
-      <data key="d2">2009.3469645688265</data>
+      <data key="d4">2009.3469645688265</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Doce Delícia">
-      <data key="d2">1391.766465552636</data>
+      <data key="d4">1391.766465552636</data>
     </edge>
     <edge source="Graci Falcão Doceria" target="Rosa Café">
-      <data key="d2">1562.4074330254462</data>
+      <data key="d4">1562.4074330254462</data>
     </edge>
     <edge source="Perdomo Doces - Supermercado Rio Vermelho" target="Cafeteria Com Café">
-      <data key="d2">5250.375468009884</data>
+      <data key="d4">5250.375468009884</data>
     </edge>
     <edge source="Perdomo Doces - Supermercado Rio Vermelho" target="Jardim Secreto Cafe">
-      <data key="d2">1387.3903540996232</data>
+      <data key="d4">1387.3903540996232</data>
     </edge>
     <edge source="Perdomo Doces - Supermercado Rio Vermelho" target="Eldorado Sabores">
-      <data key="d2">2132.5223774397423</data>
+      <data key="d4">2132.5223774397423</data>
     </edge>
     <edge source="Perdomo Doces - Supermercado Rio Vermelho" target="Doçuras da Thalita">
-      <data key="d2">5503.433371386625</data>
+      <data key="d4">5503.433371386625</data>
     </edge>
     <edge source="Perdomo Doces - Supermercado Rio Vermelho" target="Bistrô do Papito">
-      <data key="d2">3915.2000771536973</data>
+      <data key="d4">3915.2000771536973</data>
     </edge>
     <edge source="Perdomo Doces - Supermercado Rio Vermelho" target="Bendito Espresso">
-      <data key="d2">814.8836191252026</data>
+      <data key="d4">814.8836191252026</data>
     </edge>
     <edge source="Perdomo Doces - Supermercado Rio Vermelho" target="Café S/A Anápolis">
-      <data key="d2">391.11256280866655</data>
+      <data key="d4">391.11256280866655</data>
     </edge>
     <edge source="Perdomo Doces - Supermercado Rio Vermelho" target="Kikas Cake Confeitaria">
-      <data key="d2">6306.958624670783</data>
+      <data key="d4">6306.958624670783</data>
     </edge>
     <edge source="Perdomo Doces - Supermercado Rio Vermelho" target="Nubia Camilo Boulangerie">
-      <data key="d2">1240.340293516141</data>
+      <data key="d4">1240.340293516141</data>
     </edge>
     <edge source="Perdomo Doces - Supermercado Rio Vermelho" target="Doce Delícia">
-      <data key="d2">305.0890586354332</data>
+      <data key="d4">305.0890586354332</data>
     </edge>
     <edge source="Perdomo Doces - Supermercado Rio Vermelho" target="Rosa Café">
-      <data key="d2">1594.306908714092</data>
+      <data key="d4">1594.306908714092</data>
     </edge>
     <edge source="Cafeteria Com Café" target="Jardim Secreto Cafe">
-      <data key="d2">5989.993633044067</data>
+      <data key="d4">5989.993633044067</data>
     </edge>
     <edge source="Cafeteria Com Café" target="Eldorado Sabores">
-      <data key="d2">6579.799359315227</data>
+      <data key="d4">6579.799359315227</data>
     </edge>
     <edge source="Cafeteria Com Café" target="Doçuras da Thalita">
-      <data key="d2">1594.4954584870939</data>
+      <data key="d4">1594.4954584870939</data>
     </edge>
     <edge source="Cafeteria Com Café" target="Bistrô do Papito">
-      <data key="d2">1467.424881986925</data>
+      <data key="d4">1467.424881986925</data>
     </edge>
     <edge source="Cafeteria Com Café" target="Bendito Espresso">
-      <data key="d2">5417.4868980696465</data>
+      <data key="d4">5417.4868980696465</data>
     </edge>
     <edge source="Cafeteria Com Café" target="Café S/A Anápolis">
-      <data key="d2">4993.715841753109</data>
+      <data key="d4">4993.715841753109</data>
     </edge>
     <edge source="Cafeteria Com Café" target="Kikas Cake Confeitaria">
-      <data key="d2">2398.0207117712516</data>
+      <data key="d4">2398.0207117712516</data>
     </edge>
     <edge source="Cafeteria Com Café" target="Nubia Camilo Boulangerie">
-      <data key="d2">5842.9435724605855</data>
+      <data key="d4">5842.9435724605855</data>
     </edge>
     <edge source="Cafeteria Com Café" target="Doce Delícia">
-      <data key="d2">4907.692337579876</data>
+      <data key="d4">4907.692337579876</data>
     </edge>
     <edge source="Cafeteria Com Café" target="Rosa Café">
-      <data key="d2">6328.455898884321</data>
+      <data key="d4">6328.455898884321</data>
     </edge>
     <edge source="Jardim Secreto Cafe" target="Eldorado Sabores">
-      <data key="d2">1530.7444518721015</data>
+      <data key="d4">1530.7444518721015</data>
     </edge>
     <edge source="Jardim Secreto Cafe" target="Doçuras da Thalita">
-      <data key="d2">6682.796600336539</data>
+      <data key="d4">6682.796600336539</data>
     </edge>
     <edge source="Jardim Secreto Cafe" target="Bistrô do Papito">
-      <data key="d2">5094.563306103612</data>
+      <data key="d4">5094.563306103612</data>
     </edge>
     <edge source="Jardim Secreto Cafe" target="Bendito Espresso">
-      <data key="d2">566.5902726777674</data>
+      <data key="d4">566.5902726777674</data>
     </edge>
     <edge source="Jardim Secreto Cafe" target="Café S/A Anápolis">
-      <data key="d2">1044.908851869825</data>
+      <data key="d4">1044.908851869825</data>
     </edge>
     <edge source="Jardim Secreto Cafe" target="Kikas Cake Confeitaria">
-      <data key="d2">7486.321853620697</data>
+      <data key="d4">7486.321853620697</data>
     </edge>
     <edge source="Jardim Secreto Cafe" target="Nubia Camilo Boulangerie">
-      <data key="d2">229.86654316772479</data>
+      <data key="d4">229.86654316772479</data>
     </edge>
     <edge source="Jardim Secreto Cafe" target="Doce Delícia">
-      <data key="d2">1130.9323560430582</data>
+      <data key="d4">1130.9323560430582</data>
     </edge>
     <edge source="Jardim Secreto Cafe" target="Rosa Café">
-      <data key="d2">998.1044455017573</data>
+      <data key="d4">998.1044455017573</data>
     </edge>
     <edge source="Eldorado Sabores" target="Doçuras da Thalita">
-      <data key="d2">7581.022105987149</data>
+      <data key="d4">7581.022105987149</data>
     </edge>
     <edge source="Eldorado Sabores" target="Bistrô do Papito">
-      <data key="d2">5992.7888117542225</data>
+      <data key="d4">5992.7888117542225</data>
     </edge>
     <edge source="Eldorado Sabores" target="Bendito Espresso">
-      <data key="d2">2028.211257074728</data>
+      <data key="d4">2028.211257074728</data>
     </edge>
     <edge source="Eldorado Sabores" target="Café S/A Anápolis">
-      <data key="d2">2350.1194901428407</data>
+      <data key="d4">2350.1194901428407</data>
     </edge>
     <edge source="Eldorado Sabores" target="Kikas Cake Confeitaria">
-      <data key="d2">8384.547359271308</data>
+      <data key="d4">8384.547359271308</data>
     </edge>
     <edge source="Eldorado Sabores" target="Nubia Camilo Boulangerie">
-      <data key="d2">2078.0733874237144</data>
+      <data key="d4">2078.0733874237144</data>
     </edge>
     <edge source="Eldorado Sabores" target="Doce Delícia">
-      <data key="d2">2264.095985969607</data>
+      <data key="d4">2264.095985969607</data>
     </edge>
     <edge source="Eldorado Sabores" target="Rosa Café">
-      <data key="d2">2578.6253186363065</data>
+      <data key="d4">2578.6253186363065</data>
     </edge>
     <edge source="Doçuras da Thalita" target="Bistrô do Papito">
-      <data key="d2">1371.82566093767</data>
+      <data key="d4">1371.82566093767</data>
     </edge>
     <edge source="Doçuras da Thalita" target="Bendito Espresso">
-      <data key="d2">5796.4274939032985</data>
+      <data key="d4">5796.4274939032985</data>
     </edge>
     <edge source="Doçuras da Thalita" target="Café S/A Anápolis">
-      <data key="d2">5372.656437586761</data>
+      <data key="d4">5372.656437586761</data>
     </edge>
     <edge source="Doçuras da Thalita" target="Kikas Cake Confeitaria">
-      <data key="d2">1045.0079736431649</data>
+      <data key="d4">1045.0079736431649</data>
     </edge>
     <edge source="Doçuras da Thalita" target="Nubia Camilo Boulangerie">
-      <data key="d2">6221.8841682942375</data>
+      <data key="d4">6221.8841682942375</data>
     </edge>
     <edge source="Doçuras da Thalita" target="Doce Delícia">
-      <data key="d2">5286.632933413528</data>
+      <data key="d4">5286.632933413528</data>
     </edge>
     <edge source="Doçuras da Thalita" target="Rosa Café">
-      <data key="d2">6707.396494717973</data>
+      <data key="d4">6707.396494717973</data>
     </edge>
     <edge source="Bistrô do Papito" target="Bendito Espresso">
-      <data key="d2">4451.016819952027</data>
+      <data key="d4">4451.016819952027</data>
     </edge>
     <edge source="Bistrô do Papito" target="Café S/A Anápolis">
-      <data key="d2">4027.245763635491</data>
+      <data key="d4">4027.245763635491</data>
     </edge>
     <edge source="Bistrô do Papito" target="Kikas Cake Confeitaria">
-      <data key="d2">2391.758547517085</data>
+      <data key="d4">2391.758547517085</data>
     </edge>
     <edge source="Bistrô do Papito" target="Nubia Camilo Boulangerie">
-      <data key="d2">4876.473494342966</data>
+      <data key="d4">4876.473494342966</data>
     </edge>
     <edge source="Bistrô do Papito" target="Doce Delícia">
-      <data key="d2">3941.2222594622576</data>
+      <data key="d4">3941.2222594622576</data>
     </edge>
     <edge source="Bistrô do Papito" target="Rosa Café">
-      <data key="d2">5361.985820766703</data>
+      <data key="d4">5361.985820766703</data>
     </edge>
     <edge source="Bendito Espresso" target="Café S/A Anápolis">
-      <data key="d2">478.3185791920576</data>
+      <data key="d4">478.3185791920576</data>
     </edge>
     <edge source="Bendito Espresso" target="Kikas Cake Confeitaria">
-      <data key="d2">6919.731580942929</data>
+      <data key="d4">6919.731580942929</data>
     </edge>
     <edge source="Bendito Espresso" target="Nubia Camilo Boulangerie">
-      <data key="d2">425.4566743909385</data>
+      <data key="d4">425.4566743909385</data>
     </edge>
     <edge source="Bendito Espresso" target="Doce Delícia">
-      <data key="d2">564.3420833652909</data>
+      <data key="d4">564.3420833652909</data>
     </edge>
     <edge source="Bendito Espresso" target="Rosa Café">
-      <data key="d2">1027.0627776809802</data>
+      <data key="d4">1027.0627776809802</data>
     </edge>
     <edge source="Café S/A Anápolis" target="Kikas Cake Confeitaria">
-      <data key="d2">6517.062925369601</data>
+      <data key="d4">6517.062925369601</data>
     </edge>
     <edge source="Café S/A Anápolis" target="Nubia Camilo Boulangerie">
-      <data key="d2">903.7752535829959</data>
+      <data key="d4">903.7752535829959</data>
     </edge>
     <edge source="Café S/A Anápolis" target="Doce Delícia">
-      <data key="d2">86.02350417323336</data>
+      <data key="d4">86.02350417323336</data>
     </edge>
     <edge source="Café S/A Anápolis" target="Rosa Café">
-      <data key="d2">1505.3813568730375</data>
+      <data key="d4">1505.3813568730375</data>
     </edge>
     <edge source="Kikas Cake Confeitaria" target="Nubia Camilo Boulangerie">
-      <data key="d2">7232.460388103342</data>
+      <data key="d4">7232.460388103342</data>
     </edge>
     <edge source="Kikas Cake Confeitaria" target="Doce Delícia">
-      <data key="d2">6297.209153222632</data>
+      <data key="d4">6297.209153222632</data>
     </edge>
     <edge source="Kikas Cake Confeitaria" target="Rosa Café">
-      <data key="d2">7717.972714527077</data>
+      <data key="d4">7717.972714527077</data>
     </edge>
     <edge source="Nubia Camilo Boulangerie" target="Doce Delícia">
-      <data key="d2">994.1556279172216</data>
+      <data key="d4">994.1556279172216</data>
     </edge>
     <edge source="Nubia Camilo Boulangerie" target="Rosa Café">
-      <data key="d2">768.2379023340325</data>
+      <data key="d4">768.2379023340325</data>
     </edge>
     <edge source="Doce Delícia" target="Rosa Café">
-      <data key="d2">1591.404861046271</data>
+      <data key="d4">1591.404861046271</data>
     </edge>
   </graph>
 </graphml>
