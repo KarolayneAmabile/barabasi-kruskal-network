@@ -12,27 +12,19 @@ def construir_grafo(csv_path: str):
     locais = pd.read_csv(csv_path)
 
     if os.path.exists(cache):
-
         print("Carregando malha viária salva...")
-
         road = ox.load_graphml(cache)
-
     else:
-
         print("Baixando malha viária de Anápolis...")
-
         road = ox.graph_from_place(
             "Anápolis, Goiás, Brazil",
             network_type="drive"
         )
-
         road = ox.project_graph(road)
-
         os.makedirs(
             "outputs/anapolis",
             exist_ok=True
         )
-
         ox.save_graphml(
             road,
             cache
@@ -47,7 +39,6 @@ def construir_grafo(csv_path: str):
     G = nx.Graph()
 
     for _, row in locais.iterrows():
-
         x, y = transformer.transform(
             row["longitude"],
             row["latitude"],
@@ -62,7 +53,6 @@ def construir_grafo(csv_path: str):
         )
 
     for i, j in combinations(range(len(locais)), 2):
-
         origem = locais.iloc[i]
         destino = locais.iloc[j]
 

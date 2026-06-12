@@ -31,7 +31,6 @@ def plotar_grafo_e_mst(G, mst, n, pasta_saida="outputs"):
     # --------------------------------------------------
 
     if possui_coordenadas:
-
         pos = {
             node: (
                 G.nodes[node]["longitude"],
@@ -39,13 +38,9 @@ def plotar_grafo_e_mst(G, mst, n, pasta_saida="outputs"):
             )
             for node in G.nodes
         }
-
         titulo = "Locais de Anápolis"
-
     else:
-
         pos = nx.spring_layout(G, seed=42)
-
         titulo = f"Barabási-Albert (n={n})"
 
     # ==================================================
